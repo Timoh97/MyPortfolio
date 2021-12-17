@@ -101,6 +101,19 @@ DATABASES = {
 }
 
 
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+
+
+cloudinary.config(
+    cloud_name='dq4bcn8d2',
+    api_key='941563347348349', 
+    api_secret='7lOtGNkeYJ_zKGF92-O1hWxcY-k',
+)
+
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
