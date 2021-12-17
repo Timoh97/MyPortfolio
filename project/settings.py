@@ -9,8 +9,14 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
 from pathlib import Path
+import os
+import django_heroku
+import dj_database_url
+from decouple import config,Csv
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,6 +32,8 @@ SECRET_KEY = 'django-insecure-9g-hv0%ehup=y#t-73_x#l^o@zu98kwev+(j@^o_6r^tl1v^@8
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+DEBUG = True
 
 
 # Application definition
@@ -72,6 +80,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'project.wsgi.application'
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent
 
 
 # Database
