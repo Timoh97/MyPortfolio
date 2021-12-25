@@ -1,0 +1,46 @@
+{%extends 'base.html'%}
+
+
+{% block content %}
+
+
+<div><button class="btn btn-dark" style="border: .5em solid beige; border-radius: 10px;"><a class="navbar-brand" href="{% url 'index' %}"><a href="{% url 'index' %}">HOME </a></div>
+<div class="row">
+    
+    
+
+
+    {% for projects in project %}
+    <div class="col-md-6">
+        
+        <div class="card-group">
+            <div class="card">
+                <a href="">
+                  <img src="{{ projects.image.url }}" class="card-img-top responsive" height="400" alt="Personal">
+              </a>
+                <div class="card-body">
+                    <h5 style="font-style: oblique;" class="card-title">Name: <span style="color: maroon;">{{projects.project_name}}</span></h5>
+                    <p style="font-style: oblique;" class="card-text">Description: <span style="color: maroon;">{{projects.description}}</span></p>
+                    <p style="font-style: oblique;"  class="card-text">Category: <span style="color: maroon;">{{projects.category}}</span></p>
+                    <p style="font-style: oblique;"  class="card-text">future_improvements: <span style="color: maroon;">{{projects.future_improvements}}</span></p>
+                    <p style="font-style: oblique;"  class="card-text">Significance: <span style="color: maroon;">{{projects.significance}}</span></p>
+                    <a href="{{projects.url}}">{{projects.url}}</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted"><span style="color: #192841;">Time of posting: </span><span style="color: maroon;"> {{projects.date_posted|timesince}}</span></small>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+
+
+
+
+
