@@ -1,45 +1,54 @@
-<nav class="navbar navbar-expand-sm bg-white navbar-white">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <!-- Brand -->
-  
-  <div><button class="btn btn-dark" style="border: .5em solid beige; border-radius: 10px;"><a class="navbar-brand" href="{% url 'index' %}"><a href="{% url 'index' %}">HOME </a></div>
- <div style="display: flex; justify-content: space-around;">
-  <div class="col-md-6">
-    <img src="https://timoh97.github.io/portfolio-landing/images/timm%20pic.jpeg" alt="picture of me" height="70">
+  <a href="/accounts/login">Logout</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="{% url 'project' %}">projects</a>
+      </li>
+      <li class="nav-item">
+        <a href="{% url 'biodata' %}">Biodata</a>
+      </li>
+      <li class="nav-item">
+        <a href="{% url 'index' %}">Home</a>
+      </li>
+    </ul>
   </div>
-  
-
-  <div class="col-sm-1 col-md-6">
-  <!-- Links -->
-
   {% if user.is_authenticated %}
-  <ul>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
-      <ul class="dropdown-menu" role="menu">
+<ul>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
+    <ul class="dropdown-menu" role="menu">
 
-        <li>
-          <a href="{% url 'index' %}">Home</a>
-        </li>
-        <li>
-          <a href="{% url 'biodata' %}">Biodata</a>
-        </li>
-        <li>
-          <a href="{% url 'project' %}">projects</a>
-        </li>
-        <li>
-          <a href="/accounts/login">Logout</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-{%else%}
-  <li>
-    <a href="/accounts/register" class="btn btn-default">Login</a>
+      <li>
+        <a href="{% url 'index' %}">Home</a>
+      </li>
+      <li>
+        <a href="{% url 'biodata' %}">Biodata</a>
+      </li>
+      <li>
+        <a href="{% url 'project' %}">projects</a>
+      </li>
+      <li>
+        <a href="/accounts/login">Logout</a>
+      </li>
+    </ul>
   </li>
+</ul>
+{%else%}
+<li>
+  <a href="/accounts/register" class="btn btn-default">Login</a>
+</li>
 {%endif%}
-
-</div>
-
- </div>
- 
 </nav>
+
+
+
+
