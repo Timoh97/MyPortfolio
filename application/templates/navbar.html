@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <!-- Brand -->
-  <a href="/accounts/login">Logout</a>
+
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -16,32 +16,37 @@
       </li>
     </ul>
   </div>
+  
+<div style="background-color: beige; color: black;">
   {% if user.is_authenticated %}
-<ul>
-  <li class="dropdown">
-    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
-    <ul class="dropdown-menu" role="menu">
-
-      <li>
-        <a href="{% url 'index' %}">Home</a>
-      </li>
-      <li>
-        <a href="{% url 'biodata' %}">Biodata</a>
-      </li>
-      <li>
-        <a href="{% url 'project' %}">projects</a>
-      </li>
-      <li>
-        <a href="/accounts/login">Logout</a>
-      </li>
-    </ul>
+ 
+  <ul>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+  
+        <li>
+          <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li>
+          <a href="{% url 'biodata' %}">Biodata</a>
+        </li>
+        <li>
+          <a href="{% url 'project' %}">projects</a>
+        </li>
+        <li>
+          <a href="/accounts/login">Logout</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  {%else%}
+  <li>
+    <a href="/accounts/register" class="btn btn-default">Login</a>
   </li>
-</ul>
-{%else%}
-<li>
-  <a href="/accounts/register" class="btn btn-default">Login</a>
-</li>
-{%endif%}
+  {%endif%}
+</div>
+<img src="https://timoh97.github.io/portfolio-landing/images/timm%20pic.jpeg" alt="picture of tim" height="60" >
 </nav>
 
 
