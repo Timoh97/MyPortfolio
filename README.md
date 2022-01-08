@@ -62,6 +62,28 @@ The project is working as required,fully responsive and has no known bugs.
 #### running the application
 
 python manage.py server
+## SCREENSHOTS
+  <img src="./screenshots/1.png" alt="screenshot" />
+
+  <img src="./screenshots/2.png" alt="screenshot" />
+
+  <img src="./screenshots/3.png" alt="screenshot" />
+
+  <img src="./screenshots/4.png" alt="screenshot" />
+
+  <img src="./screenshots/5.png" alt="screenshot" />
+
+  <img src="./screenshots/6.png" alt="screenshot" />
+
+  <img src="./screenshots/7.png" alt="screenshot" />
+
+  <img src="./screenshots/8.png" alt="screenshot" />
+
+  <img src="./screenshots/9.png" alt="screenshot" />
+
+  <img src="./screenshots/10.png" alt="screenshot" />
+
+
 
 ## LIVE LINK
 
