@@ -94,4 +94,4 @@ https://timportfoliocareers.herokuapp.com/
  
 
  ## LICENSE AND COPYRIGHT
-[MIT License] **Timothy Mugendi** **2021**
+[MIT License] **Timothy Mugendi** **2022**
