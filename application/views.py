@@ -8,18 +8,18 @@ from . models import Project
 def index(request):
    
     return render(request, 'index.html')
-@login_required(login_url='/accounts/login/')
+
 def biodata(request):
    
     return render(request, 'biodata.html')
-@login_required(login_url='/accounts/login/')
+
 def profile(request):
   
   
   return render(request, 'profile.html')
 
 
-@login_required(login_url='/accounts/login/')
+
 def project(request):
   
     project = Project.objects.all()
