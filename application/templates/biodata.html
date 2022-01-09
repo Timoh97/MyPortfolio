@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,43 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>timothy.mugendi portfolio</title>
     <link rel="stylesheet" href="index.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-<body class="container">
-    <header>
-         <nav>
-             <ul class="nav-list" >
-                
-                 <li><button class="btn btn-default" style="border: .5em solid beige; border-radius: 10px;"><a class="navbar-brand" href="{% url 'index' %}"><a href="{% url 'index' %}">HOME </a> </li>
-                 <li><button class="btn btn-default" style="border: .5em solid beige; border-radius: 10px;"><a class="navbar-brand" href="{% url 'project' %}"><a href="{% url 'project' %}">Projects</a> </li>
+<body class="">
 
-             </ul>
-         </nav>
-    </header>
-    <main>
-        <img id="pic1" src="https://timoh97.github.io/portfolio-landing/images/timm%20pic.jpeg" alt="picture of me">
-        <div class="desc" >
-            <h2 id="intro-description"><span>TiM</span> MUGENDI  ||  <span>COMP</span>UTER WIZARD</h2>
+
+<nav class="navbar navbar-light bg-black" style="background-color: rgb(19, 17, 17);">
+<div class="row" style="background-color: rgb(19, 17, 17);">
+    <div class="col-md-6" style="background-color: rgb(19, 17, 17);">
+        <a class="navbar-brand" href="{% url 'project' %}"><span style="color: aliceblue;">Projects</span></a>
+      </div>
+      <div class="col-md-6" style="background-color: rgb(19, 17, 17);">
+          <a class="navbar-brand" href="{% url 'index' %}" ><span style="color: aliceblue;">Home</span></a>
+        </div>
+</div>
+      </nav>
+      
+
+    <section>
+        <img id="pic1" style="clip-path: circle(); float: right; height: 350px; width: 350px;" src="https://timoh97.github.io/portfolio-landing/images/timm%20pic.jpeg" alt="picture of me">
+        <div class="desc" style="padding: .7em;" >
+            <h2 class="text" style="margin-left: 4em;" id="intro-description"><span>TiM</span> MUGENDI  ||  <span>COMP</span>UTER WIZARD</h2>
             <p class="salutation">Hi there,</p> 
-            <p id="intro">I am a <strong>software developer</strong> with extensive experience in web development. <br>
+            <p class="salutation" id="intro">I am a <strong>software developer</strong> with extensive experience in web development. <br>
                My expertise is website design, <em>front-end development and back-end development.</em>
             </p>
-               <button class="Hire-me" type="button">Hire me</button>
+               <button style=" border-radius: 10px; color: white; font-size: x-large; background-color: green;" class="Hire-me" type="button">Hire me</button>
             </div>
-            <div class="about">
-                <div id="about-me">
-                    <h2>About me</h2>
-                    <p>I am a <strong>Fullstack developer and a pure and applied Mathematician.</strong>  
+<div id="about1" style="margin-top: 190px;">
+    <div class="col-md" style=" border: .2em solid white; padding: 10px; width: 60%; margin-top: 190px; display: flexbox; margin: auto;">
+        <h2 class="text-center">About me</h2>
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: oblique;">I am a <strong>Fullstack developer and a pure and applied Mathematician.</strong>  
 
-                        I am zealous about solving real world problems.
-                        It turns out that I can do that through software development while incorporating my love for Mathematics. 
-                        
-                        It is a Science-based jungle out there and I'm loving exploring the jungle so far. 
-                        
-                        In case I am neither <em>crunching Codes</em> nor figuring out <em>Mathematical concepts,</em>
-                         I am on yoga mat stretching, taking a long hike or curled up buried in a great read. 
-                        These are my best and sure ways of decompressing after a busy work schedule.</p>
-                    <h3>Background information</h3>
+            I am zealous about solving real world problems.
+            It turns out that I can do that through software development while incorporating my love for Mathematics. 
+            
+            It is a Science-based jungle out there and I'm loving exploring the jungle so far. 
+            
+            In case I am neither <em>crunching Codes</em> nor figuring out <em>Mathematical concepts,</em>
+             I am on yoga mat stretching, taking a long hike or curled up buried in a great read. 
+            These are my best and sure ways of decompressing after a busy work schedule.</p>
+       </div>
+</div>
+            <div class="row" id="row2" style=" margin: 20px; display: flex; flex-direction: row; justify-content: space-around; ">
+                
+
+                   <div class="row-md-6" style=" width: 300px; height: 300px; padding: .8em; border: .2em dotted white; border-radius: 10px; margin: 20px; display: flex; flex-direction: column;">
+                    <h3 class="text-center">Background <br> <span style="color: white;">information</span></h3>
                     <ul>
                         <li>Nationality:Kenyan</li>
                         <li>Phone: 0791-417-147</li>
@@ -53,7 +63,9 @@
                         <li>Course: Bsc (Mathematics)</li>
                         <li>Software development</li>
                     </ul>
-                    <h3>Hobbies</h3>
+                   </div>
+                   <div class="row-md-6" style=" width: 300px; height: 300px; padding: .8em; border: .2em dotted white; border-radius: 10px; margin: 20px; display: flex; flex-direction: column;">
+                    <h3 class="text-center">Hobbies</h3>
                     <ul>
                         <li>Chess</li>
                         <li>Swimming</li>
@@ -61,14 +73,15 @@
                         <li>Hiking</li>
                         <li>Bike racing</li>
                     </ul>
-                    <button class="cv" type="button">download cv</button>
-                </div>
+                    <button class="cv" style="background-color: green; color: white; padding: 10px; font-size: large; border-radius: 10px;" type="button">download cv</button>
+                  </div>
+                
             </div>
-            <h2 class="works">My <span class="salutation" >services</span></h2>
+            <h2 class="works" style="text-align: center;">My <span class="salutation" >services</span></h2>
             <div class="services">
             <div id="service-desc">
                 <h3>Software development</h3>
-                <p>I have front-end and back-end experience in following areas.</p>
+                <p class="BIZ">I have front-end and back-end experience in following areas.</p>
                 <ul class="service-list">
                        <li>HTML</li>
                        <li>CSS</li>
@@ -87,61 +100,64 @@
                 </ul>
 
             </div>
-            <div id="math-description">
-                <h3>Pure and Applied Mathematics</h3>
-                <p>In the world of Science, I solve real world problems using Mathematics.</p>
-                    <ul class="service-list" >
-                        <li>Lnear programming</li>
-                        <li>Mathematical modelling</li>
-                        <li>Advanced Calculus</li>
-                        <li>Matrices</li>
-                        <li>Linear algebra</li>
-                        <li>Fluid Mechanics</li>
-                        <li>Statistics</li>
-                        <li>SPSS</li>
-                        <li>Jupyter notebooks</li>
-                        <li>Differential Geometry</li>
-                    </ul>
-            </div>
-            <div id="service-description">
-                <h3>Article writing</h3>
-                <p>I write creative articles,essays and prose forms. <br>
-                I have written the following poems.</p>
-                <ul class="service-list">
-                    <li>My sister </li>
-                    <li>Kenya@50</li>
-                    <li>The living</li>
-                    <li>Destiny</li>
-                    <li>Kinsmen</li>
-                </ul>
-                
-            </div>
+<div class="row">
+    <div class="col-md-6" id="math-description">
+        <h3>Pure and <span>Applied Mathematics</span></h3>
+        <p class="BIZ">In the world of Science, I solve real world problems using Mathematics.</p>
+            <ul class="service-list" >
+                <li>Lnear programming</li>
+                <li>Mathematical modelling</li>
+                <li>Advanced Calculus</li>
+                <li>Matrices</li>
+                <li>Linear algebra</li>
+                <li>Fluid Mechanics</li>
+                <li>Statistics</li>
+                <li>SPSS</li>
+                <li>Jupyter notebooks</li>
+                <li>Differential Geometry</li>
+            </ul>
+    </div>
+    <div class="col-md-6" id="service-description">
+        <h3>Article <span>writing</span></h3>
+        <p class="BIZ">I write creative articles,essays and prose forms. <br>
+        I have written the following poems.</p>
+        <ul class="service-list">
+            <li>My sister </li>
+            <li>Kenya@50</li>
+            <li>The living</li>
+            <li>Destiny</li>
+            <li>Kinsmen</li>
+        </ul>
+        
+    </div>
+
+</div>
         </div>
-        <h2 class="works">Portfolio</h2>
-            <div id="portfolio">
+        <h2 class="works" style="text-align: center;">Portfolio</h2>
+            <div class="row" id="portfolio">
                 
-                <div id="medics">
-                    <h3>The online medics (HTML,CSS)</h3>
-                    <img class="portfolio-" src="./images/medics.jpg" alt="Doctors at work" width="200"> 
+                <div class="col-md-4" id="medics">
+                    <h3>The online <span>medics (HTML,CSS)</span></h3>
+                    <img class="portfolio-" src="https://timoh97.github.io/portfolio-landing/images/medics.jpg" alt="Doctors at work" width="200"> 
                     
-                    <p>This is a website that helps address health issues that need medical attention. 
+                    <p class="BIZ">This is a website that helps address health issues that need medical attention. 
                         It creates a prompt way of accessing health services and the best
                          medics in a one stop thus making 
                         it convinient and the best way to keep private biodata secure and confidential.</p> <br>
                         <p>You want to visit my site? <a href="https://timoh97.github.io/The-online-medics/">click here</a></p>
                 </div>
-                <div id="food-website">
-                    <h3>Streetfood website (HTML,CSS)</h3>
-                    <img class="portfolio-" src="./images/food pictures.jpeg" alt="" width="200">
-                    <p>This is a website that shows the type of 
+                <div class="col-md-4"  id="food-website">
+                    <h3>Streetfood <span>website (HTML,CSS)</span></h3>
+                    <img class="portfolio-" style="clip-path: circle();" src="https://timoh97.github.io/portfolio-landing/images/food%20pictures.jpeg" alt="" width="200">
+                    <p class="BIZ">This is a website that shows the type of 
                         food we offer among other details like reservations,
                          our contacts and catering services.</p> <br>
                          <p>You want to visit my site? <a href="https://timoh97.github.io/Streetfood-website/">click here</a></p>
                 </div>
-                <div id="gallery">
-                    <h3>Photography gallery (HTML,CSS)</h3>
-                    <img class="portfolio-" src="./images/soft dev pic.jpeg" alt="dev pics" height="200">
-                    <p>This is my photography website. In this website, 
+                <div class="col-md-4"  id="gallery">
+                    <h3>Photography <span>gallery (HTML,CSS)</span></h3>
+                    <img class="portfolio-" src="https://timoh97.github.io/portfolio-landing/images/soft%20dev%20pic.jpeg" alt="dev pics" height="200">
+                    <p class="BIZ">This is my photography website. In this website, 
                         the best pictures of my adventure shall be posted here. In addition, 
                         it shall contain scenic pictures and activities 
                         carried out by people from all parts of the globe.</p>
@@ -149,333 +165,302 @@
                 </div>
             </div>
                 <div id="services1">
-                <div id="projects">
-                    <p class="projects"><span>20+</span> <br>Successful projects</p>
+                <div class="projects1" id="projects" style="border: .2em solid white; width: 300px; border-radius: 10px; padding: .5em;">
+                    <p class="projects"><span style="font-size: x-large; text-align: center;" class="count">20+</span> <br>Successful projects</p>
                 </div>
-                <div id="clients">
-                    <p class="projects"><span>100+</span> <br>Happy clients</p>
+                <div class="projects1" id="clients" style="border: .2em solid white; width: 300px; border-radius: 10px; padding: .5em;">
+                    <p class="projects"><span style="font-size: x-large; text-align: center;" class="count">100+</span> <br>Happy clients</p>
                 </div>
-                <div id="team-members">
-                    <p class="projects"><span>100+</span> <br> team members</p>
+                <div class="projects1" id="team-members" style="border: .2em solid white; width: 300px; border-radius: 10px; padding: .5em;">
+                    <p class="projects"><span style="font-size: x-large; text-align: center;" class="count">100+</span> <br> Team members</p>
                 </div> 
-                <div id="awards">
-                    <p class="projects"><span>5+</span> <br>Winning awards</p>
+                <div class="projects1" id="awards" style="border: .2em solid white; width: 300px; border-radius: 10px; padding: .5em;">
+                    <p class="projects"><span style="font-size: x-large; text-align: center;" class="count">5+</span> <br>Winning awards</p>
                 </div>
             </div>
             <div>
-                <h2 class="works">My blog</h2>
-                <div>
-                    <h3>Trending businesses</h3>
-                    <h4>Cryptocurrency</h4>
-                    <p>Cryptocurrency is a type of digital currency that
+                <h2 class="works"><span class="text-center" style="text-align: center;">My blog</span></h2>
+                <div class="bizna">
+                    <h3 class="text-center">Trending businesses</h3>
+                    <h4 class="text-center"><span>Cryptocurrency</span></h4>
+                    <p class="BIZ">Cryptocurrency is a type of digital currency that
                          generally only exists electronically. There is no physical coin or bill u
                         you use a service that allows you to cash in cryptocurrency for a physical token. Read more about <a href="https://coinmarketcap.com/">cryptocurrency</a></p>
                 </div>
-                <div>
-                    <h3>Trending businesses</h3>
-                    <h4>Forex</h4>
-                    <p>The foreign exchange market (Forex, FX, or currency market) is a global decentralized or over-the-counter (OTC) market for the trading of currencies. 
+                <div class="bizna">
+                    <h3 class="text-center">Trending businesses</h3>
+                    <h4 class="text-center"><span>Forex</span></h4>
+                    <p class="BIZ">The foreign exchange market (Forex, FX, or currency market) is a global decentralized or over-the-counter (OTC) market for the trading of currencies. 
                         This market determines foreign exchange rates for every currency. It includes all aspects of buying, selling and exchanging currencies at current or determined prices. In terms of trading volume, 
                         it is by far the largest market in the world, followed by the credit market.Read more here<a href="https://www.forex.com/en/">Foreign exchange</a></p>
                 </div>
-                <div>
-                    <h3>Trending businesses</h3>
-                    <h4>Credit market</h4>
-                    <p>
+                <div class="bizna">
+                    <h3 class="text-center">Trending businesses</h3>
+                    <h4 class="text-center"><span>Credit market</span></h4>
+                    <p class="BIZ">
                         Credit market, also known as debt market, is a market where companies and governments offer debt to investors in he form of junk bonds, investment-grade bonds, and short-term commercial paper. It includes debt offerings such as notes and securitised obligations such as collateralised debt obligations (CDOs),
                          credit default swaps (CDS), and mortgage-backed securities.Read more about <a href="https://cleartax.in/g/terms/credit-market">credit market</a>
                     </p>
                 </div>
             </div>
             
-    </main>
+        </section>
     <footer>
 
     </footer>
 </body>
 <style>
 
-
-h2 {
-    color: #ff022c;
-}
-
-#portfolio {
-    display: flex;
-    justify-content: space-between;
-}
-
-.portfolio- {
-    clip-path: circle();
-}
-#services1 {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-.about {
-    padding-top: 50px;
-    padding-left: 10px;
-    flex-wrap: wrap;
-}
-#about-me {
-    height:100px;
-    width: 200px;
-    border: 3px solid white;
-    padding: 5px;
-    flex-wrap: wrap;
-
-}
-
-}
-
-
-
-h2 {
-    color: #ff022c;
-}
-
-#portfolio {
-    display: flex;
-    justify-content: space-between;
-}
-
-.portfolio- {
-    clip-path: circle();
-}
-#services1 {
-    padding: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-
-
-
-.container{
-border: 0.5px white;
-padding: 3px;
-}
-
 * {
     color: white;
     background-color: rgb(19, 17, 17);
 }
 
-.nav-list{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    position: static;
-}
-#intro-description {
-    position: relative;
-    margin: 20px 0 0;
-    font-size: 2em;
-    font-weight: 900;
-    color: #fff;
-    z-index: 1;
-    overflow: hidden;
-}
-
-#intro-description:before
-{content: '';
-    position: absolute;
-    left: 0;
-    width: 120%;
-    height: 100%;
-    background: linear-gradient(90deg,transparent 0%,rgb(19, 17, 17) 5%,rgb(19, 17, 17) 100%);
-    animation: animate 7s linear forwards;
-    animation-delay: 2s;
-}
-
-#intro-description span
-{
+h2 {
     color: #ff022c;
 }
-  @keyframes animate{
-    0% {
-        left: 110%;
-    }
-    100% {
-        left: -20%;
-    }
-}  
 
-#pic1 { float: right;
-    height: 350px; ;
-    width: 350px;
-    clip-path: circle();
+@media only screen and (max-width: 600px) {
+    #pic1 { float: left;
+    height: 20px; ;
+    width: 20px;
+    clip-path: circle(); 
 }
 
-.desc {
-    margin-left: 10em;
-    top: 400px;
-    left: 10px;
+#services1 {
+    border: .2em solid white;
+     width: fit-content; 
+     border-radius: 10px; 
+     padding: .5em;
 }
 
- .Hire-me { color: white;
-    font-size: xx-large;
-    background: green;
-    height: 1.5em;
-    width: 10rem;
-    border-radius: 50px;
+.cv{
+    background-color: green; 
+    color: white; 
+    height: 3em; 
+    width: 9em; 
+    font-size: large; 
+    padding: .6em;
 }
 
-.salutation {
-    color: rgb(29, 156, 29);
-    font-size: xx-large;
-    font-weight: 700;
-}
-.about {
-    padding-top: 150px;
-    padding-left: 380px;
-}
-#about-me {
-    height: 550px;
-    width: 700px;
-    border: 3px solid white;
-    padding: 20px;
-
-}
-.cv {
-    color: white;
-    font-size: xx-large;
-    background: green;
-    height: 1.5em;
-    width: 13rem;
-    border-radius: 50px;  
-    position: relative;
-    top: -80px;
-    left: 400px;
-}
-#intro {
-    font-size: x-large;
-}
-h2 {
-    font-size: xx-large;
-}
-
-.works{
-    text-align: center;
-}
-
-#service-desc {
-    height: 330px;
-    width: 400px;
-    border: 3px solid white;
-    list-style-type: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-}
-
-#math-description {
-    height: 330px;
-    width: 400px;
-    border: 3px solid white;
-    list-style-type: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-}
-
-#service-description {
-    height: 330px;
-    width: 400px;
-    border: 3px solid white;
-    list-style-type: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-}
-
-.service-list {
-    list-style-type: none;
-}
-
-div>h3 {
-    font-size: x-large;
-}
-#medics,#food-website,#gallery {
-height: 400px;
-width: 300px;
-border: 3px white;
-padding-left: 20px;
+button {
+    background-color: green;
+     color: white; 
+     height: 3em; 
+     width: 9em; 
+     font-size: x-large; 
+     padding: .6em;
+     border-radius: 10px;  
 }
 
 #portfolio {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
-.portfolio- {
-    clip-path: circle();
-}
-
-.services {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 70px;
-}
-
-#projects{
-    height: 7rem;
-    width: 15rem;
-    padding-left: 30px;
-    padding-bottom: 20px;
-    border: 2px solid white;
-    border-radius: 10px;
-}
-
-#clients {
-    height: 7rem;
-    width: 15rem;
-    padding-left: 70px;
-    padding-bottom: 20px;
-    border: 2px solid white;
-    border-radius: 10px;
-}
-
-#team-members {
-    height: 7rem;
-    width: 15rem;
-    padding-left: 70px;
-    padding-bottom: 20px;
-    border: 2px solid white;
-    border-radius: 10px;
-}
-
-#awards {
-    height: 7rem;
-    width: 15rem;
-    padding-left: 70px;
-    padding-bottom: 20px;
-    border: 2px solid white;
-    border-radius: 10px;
-}
-
-#projects>p, #clients>p, #team-members>p, #awards>p {
-    font-size: 25px;
-}
-
-p>span {
-    color: rgb(137, 212, 137);
+.works{
     text-align: center;
-    font-size: 50px;
-}
-
-#services1 {
-    padding: 50px;
-    display: flex;
-    justify-content: space-between;
 }
 
 h3 {
-    color: rgb(125, 218, 125);
+    font: small;
+    text-align: center;
+    color: #ff022c;
 }
+
+h4{
+    text-align: center;
+}
+.portfolio-{
+  clip-path: circle();
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row2 {
+display: flex;
+flex-wrap: wrap;
+}
+
+#about1{
+    display: none;
+    margin-top: 10px;
+    width: 350px;
+}
+
+.count{
+    text-align: center;
+    font-size: xx-large;
+    color: green;
+}
+
+.projects{
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: xx-large;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    margin: .4em;
+}
+.col-md {
+    border: .3em solid white;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.col-md-6{
+    border: .3em solid white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+}
+
+#service-desc{
+    border: .3em solid white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.projects1 {
+    border: .3em solid white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    flex-wrap: wrap;
+}
+
+.text{
+    flex-wrap: wrap;  
+}
+
+#services1{
+    border: .3em solid white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: fit-content; 
+}
+
+.BIZ {
+flex-wrap: wrap;
+font-size: x-large;
+}
+
+.desc {
+    flex-wrap: wrap;
+    border: .3em solid rgb(19, 17, 17);;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+    padding: .7em;
+}
+
+.bizna {
+    flex-wrap: wrap;
+    border: .3em solid white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px; 
+    padding: .7em;
+}
+.col-md-4 {
+    border: .3em solid white;
+    border-radius: 10px;
+    margin: 3em;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.row_md-6 {
+    width: 300px; 
+    height: 300px; 
+    padding: .4em; 
+    border: .2em solid white; 
+    border-radius: 10px;
+    margin: 10px;  
+}
+
+#portfolio{
+    display: flex; 
+    justify-content: space-between;
+}
+}
+
+
+@media only screen and (min-width: 601px) {
+    .count{
+    text-align: center;
+    font-size: x-large;
+    color: green;
+    padding-left: 10px;
+}
+
+.projects{
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    padding-left: 16px;
+}
+
+#services1 {
+     padding: .5em;
+     display: flex;
+     justify-content: space-around;
+}
+
+span {
+    color: green;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5em;
+}
+
+.col-md-4 {
+    border: .3em solid white;
+    margin: .2em dotted green;
+}
+
+.portfolio- { float: left;
+    height: 150px; ;
+    width: 150px;
+    clip-path: circle(); 
+
+}
+
+h3 {
+    color: #ff022c;
+}
+
+#service-desc {
+margin: auto;
+width: 20%;
+border: .2em dotted white;
+padding: .1em;
+border-radius: 10px;
+
+}
+
+.salutation, .Hire-me {
+    margin-left: 7em;
+}
+
+
+}
+
+
 </style>
 </html>
-
